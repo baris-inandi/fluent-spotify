@@ -1,7 +1,7 @@
 ## Fluent-Spotify
 
 A Windows 10 inspired Spotify theme for spicetify.
-Based on Dribbblish from [@morpheusthewhite](https://github.com/morpheusthewhite)'s [spicetify-themes](www.github.com/morpheusthewhite/spicetify-themes)
+Based on Dribbblish from [@morpheusthewhite](https://github.com/morpheusthewhite)'s [spicetify-themes](https://github.com/morpheusthewhite/spicetify-themes)
 
 
 
