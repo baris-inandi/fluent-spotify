@@ -1858,6 +1858,7 @@ header#header:before {
     margin-left: 12px;
     margin-right: 10px;
     user-select: none;
+    font-family: 'spotify-circular';
 }
 
 /* horizontal cards left aligned text */
@@ -2003,7 +2004,8 @@ footer#view-player-footer {
 #content,
 table.current.playing.tracklist-podcast,
 table.tracklist-podcast,
-.AllResults {
+.AllResults,
+.lyrics-lines-container .lyrics-list-full {
     padding-bottom: calc(var(--bar-height) + var(--bar-float) * 2);
 }
 
@@ -2247,13 +2249,18 @@ div#modal {
     background: unset;
 }
 
-.HomeRoot__header{
+.HomeRoot__header {
     background: linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, .12) 100%);
 }
 
 /* friends section wider resize */
 .resizer {
     width: 12px;
+}
+
+/* remove padding between card title and subtitle */
+.Card__info-title {
+    padding: 0 !important;
 }
 
 /* glow effect */
