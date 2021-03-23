@@ -2276,7 +2276,7 @@ div#modal {
     text-align: center !important;
 }
 
-h1.glue-page-header__title {
+.sticky-top .glue-page-header__title {
     justify-content: center !important;
     display: flex !important;
     text-align: center !important;
