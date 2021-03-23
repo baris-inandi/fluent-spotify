@@ -1483,15 +1483,13 @@ button.CanonicalButton.Button.Button--style-icon-stroke.Button--size-32.spoticon
 .spoticon-user-circle-24::before,
 .glue-page-header__label,
 .Header__sticky-wrapper .Header__image-inner,
-.sticky-top .Header__image,
+.glue-page-header--with-active-sticky-header .Header__image,
 .view-player .remote-playback-bar.visible,
 .ConnectPopup__button,
 .spoticon-connect-to-devices-16:after,
 .glue-page-header__count-label,
 .discography button.button.button-header-add.button-icon-with-stroke,
-.sticky-top .glue-page-header__image,
-.sticky-top .glue-page-header__buttons,
-.sticky-clone.sticky-top .tl-header {
+.Header--with-active-sticky-header .Header__buttons {
     display: none !important;
 }
 
@@ -2008,7 +2006,8 @@ footer#view-player-footer {
 table.current.playing.tracklist-podcast,
 table.tracklist-podcast,
 .AllResults,
-.lyrics-lines-container .lyrics-list-full {
+.lyrics-lines-container .lyrics-list-full,
+.Content.container {
     padding-bottom: calc(var(--bar-height) + var(--bar-float) * 2);
 }
 
@@ -2249,12 +2248,6 @@ div#modal {
     padding: 0 !important;
 }
 
-/* center aligned sticky header */
-.sticky-top {
-    display: flex;
-    justify-content: center;
-}
-
 /* bottom border on sticky top */
 .glue-page-header--with-active-sticky-header .glue-page-header__background {
     border-bottom: 1px solid rgba(255, 255, 255, .1) !important;
@@ -2265,21 +2258,75 @@ div#modal {
     width: 100% !important;
 }
 
-.Header--with-active-sticky-header .Header__sticky.sticky-top {
+.Header--with-active-sticky-header .Header__sticky.sticky-top,
+.glue-page-header--with-active-sticky-header .glue-page-header__sticky {
     left: 0px !important;
 }
 
-/* center align not only items but text in sticky top bar */
-.Header__sticky-inner * {
-    justify-content: center !important;
-    display: flex !important;
-    text-align: center !important;
+/* open up 1px space for border on sticky top */
+.Header--with-active-sticky-header .Header__sticky-inner {
+    transform: translateY(-1px);
 }
 
-.sticky-top .glue-page-header__title {
-    justify-content: center !important;
-    display: flex !important;
-    text-align: center !important;
+/* searchbar */
+input#search-input {
+    background: rgba(255, 255, 255, .1);
+    padding: 14px 32px 14px 36px;
+    font-size: 12px;
+    width: 180px !important;
+}
+
+.SearchInput {
+    margin-left: 2px;
+    margin-top: -2px;
+}
+
+span.SearchInput__searchIcon.spoticon-search-16:before {
+    margin-left: 2px;
+}
+
+span.SearchInput__searchIcon.spoticon-search-16 {
+    margin-left: 6px;
+}
+
+button.SearchInput__clearButton.spoticon-x-16:before,
+span.SearchInput__searchIcon.spoticon-search-16:before {
+    font-size: 10px;
+}
+
+/* drag region 100% width */
+.body-container--mac .content-top-bar,
+.body-container--windows .content-top-bar {
+    width: 100%;
+}
+
+/* focus ring border radius */
+.CanonicalButton__focus-ring {
+    border-radius: 0;
+}
+
+/* profile dropdown button */
+button#profile-menu-toggle:before {
+    margin-top: -1px;
+    font-size: 12px;
+}
+
+/* navigation buttons */
+div#view-browser-navigation-top-bar *:before {
+    font-size: 12px;
+}
+
+/* blur top bar to avoid overlapping with content */
+.content-top-bar {
+    padding-bottom: 8px;
+    backdrop-filter: blur(3px);
+}
+
+/* offline indicator */
+div#view-offline-indicator {
+    z-index: 999;
+    background: rgba(46, 119, 208, .5);
+    backdrop-filter: blur(30px) saturate(2);
 }
 
 /* glow effect */
