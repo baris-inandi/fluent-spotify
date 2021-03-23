@@ -1488,7 +1488,10 @@ button.CanonicalButton.Button.Button--style-icon-stroke.Button--size-32.spoticon
 .ConnectPopup__button,
 .spoticon-connect-to-devices-16:after,
 .glue-page-header__count-label,
-.discography button.button.button-header-add.button-icon-with-stroke {
+.discography button.button.button-header-add.button-icon-with-stroke,
+.sticky-top .glue-page-header__image,
+.sticky-top .glue-page-header__buttons,
+.sticky-clone.sticky-top .tl-header {
     display: none !important;
 }
 
@@ -2146,23 +2149,6 @@ button#player-button-shuffle.active:before,
     animation: 2s intro;
 }
 
-/* artist header intro animation */
-@keyframes fade-in {
-
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-
-}
-
-.glue-page-header__background {
-    animation: 2s fade-in;
-}
-
 /* BETA: 2 column discog */
 
 .discography ul.lists.list-unstyled.standard-grid.row {
@@ -2225,13 +2211,13 @@ div#modal {
 }
 
 /* artist page display featured item under popular tracks */
-#artist-page .col-xs-12.col-sm-12.col-md-8 {
-    display: flex;
-    flex-direction: column;
+.col-xs-12 {
+    display: flex !important;
+    flex-direction: column !important;
 }
 
-.featured-item-container.row {
-    order: 1;
+.featured-item-container {
+    order: 1 !important;
 }
 
 /* fix featured item artist comment border radius */
@@ -2261,6 +2247,39 @@ div#modal {
 /* remove padding between card title and subtitle */
 .Card__info-title {
     padding: 0 !important;
+}
+
+/* center aligned sticky header */
+.sticky-top {
+    display: flex;
+    justify-content: center;
+}
+
+/* bottom border on sticky top */
+.glue-page-header--with-active-sticky-header .glue-page-header__background {
+    border-bottom: 1px solid rgba(255, 255, 255, .1) !important;
+}
+
+/* 100% top bar width */
+.Header--with-active-sticky-header .Header__background {
+    width: 100% !important;
+}
+
+.Header--with-active-sticky-header .Header__sticky.sticky-top {
+    left: 0px !important;
+}
+
+/* center align not only items but text in sticky top bar */
+.Header__sticky-inner * {
+    justify-content: center !important;
+    display: flex !important;
+    text-align: center !important;
+}
+
+h1.glue-page-header__title {
+    justify-content: center !important;
+    display: flex !important;
+    text-align: center !important;
 }
 
 /* glow effect */
