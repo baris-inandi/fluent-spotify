@@ -1,27 +1,6 @@
 ## Fluent-Spotify
 
-A Windows 10 inspired Spotify theme for spicetify.
-Based on Dribbblish from [@morpheusthewhite](https://github.com/morpheusthewhite)'s [spicetify-themes](https://github.com/morpheusthewhite/spicetify-themes)
 
+OK, the long waited new spotify gui is happening. The web player had the new gui for a while now and we have all seen this coming. The web player gui is on the way to the new spotify desktop app. This means i will be no longer maintaining this project until spotify decides what should be done with the desktop app. If the new gui (thats currently on testing) is released, fluent-spotify probably will no longer work and will need a complete rewrite.
 
-
-#### Installation
-
-Installation is just like Dribbblish:
-
-Follow instructions [here](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Dribbblish) to install the theme.
-
-Use these commands in powershell:
-
-```bash
-cd "$(dirname "$(spicetify -c)")/Themes/Dribbblish"
-cp dribbblish.js ../../Extensions
-spicetify config extensions dribbblish.js
-spicetify config current_theme Dribbblish color_scheme base-dark
-spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
-spicetify apply
-```
-
-<img src="https://github.com/baris-inandi/fluent-spotify/raw/main/screenshots/album.png" alt="screenshot" style="zoom: 33%; border: solid 6px gray;" />
-
-<img src="https://github.com/baris-inandi/fluent-spotify/raw/main/screenshots/main.png" alt="screenshot" style="zoom: 33%; border: solid 6px gray" />
+After all this is over, this project will continue. Also i won't use dribbblish if the new gui is released.
