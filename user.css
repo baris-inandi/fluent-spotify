@@ -1489,7 +1489,8 @@ button.CanonicalButton.Button.Button--style-icon-stroke.Button--size-32.spoticon
 .spoticon-connect-to-devices-16:after,
 .glue-page-header__count-label,
 .discography button.button.button-header-add.button-icon-with-stroke,
-.Header--with-active-sticky-header .Header__buttons {
+.Header--with-active-sticky-header .Header__buttons,
+.Card--show .Card__info-subtitle-description {
     display: none !important;
 }
 
@@ -2007,7 +2008,8 @@ table.current.playing.tracklist-podcast,
 table.tracklist-podcast,
 .AllResults,
 .lyrics-lines-container .lyrics-list-full,
-.Content.container {
+.Content.container,
+.app-content {
     padding-bottom: calc(var(--bar-height) + var(--bar-float) * 2);
 }
 
